@@ -1,6 +1,6 @@
 LinuxTrackFG - README
 
-brent@brenthugh.com
+brent@brenthugh.com 
 
 LinuxTrackFG is a script that allows just about any headtracking type device to 
 be used in Flightgear.

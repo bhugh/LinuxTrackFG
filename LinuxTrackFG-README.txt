@@ -2,16 +2,24 @@ LinuxTrackFG - README
 
 brent@brenthugh.com 
 
+LinuxTrackFG is a script that allows just about any headtracking type device to be used in Flightgear.
+
+Specifically, it allows any headtracking type device that can output position 
+and rotation as a virtual joystick, to be used in FlightGear.  However, below
+techniques are described that allow most any common headtracker (TrackIR,
+EDTracker, etc etc etc) to translate its output to a virtual joystick device.
+
+LinuxTrackFG may or may not be the BEST way to accomplish this task, but it is 
+A way, and it works.
+
 LinuxTrackFG is a fork of the portions of the LinuxTrack software related to 
-FlightGear that allows any headtracking type device that can output position and 
-rotation as a virtual joystick to be used in Flightgear.
+FlightGear. Note the the files from LinuxTrack included and modified here are 
+just a very, very small portion of the overall LinuxTrack progrect.  The only 
+files included here are those related directly to the FlightGear interface.
 
-This may or may not be the BEST way to accomplish this task, but it is A way, 
-and it works.
+LinuxTrack by uglyDwarf can be found here:
 
-Note the the files from LinuxTrack included and modified here are just a very, 
-very small portion of the overall LinuxTrack progrect.  The only files included
-here are those related directly to the FlightGear interface.
+  https://github.com/uglyDwarf/linuxtrack
 
 The headtracking devices and software that could work with this type of setup 
 include:

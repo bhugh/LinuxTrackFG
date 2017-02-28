@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+
+<!-- Example joystick configuration for LinuxTrack ltr_pipe's uinput-abs mode -->
+
+<PropertyList>
+
+  <!-- If you have EITHER a vJoy or an EDTracker, you can leave both lines below 
+  intact.  However if you have BOTH installed on your system, you should delete 
+  the <name> line for the one you don't want to use as your main head tracking 
+  device, and leave the other. If you see vibration or shaking between two 
+  different positions it is probably because your devices are conflicting, and 
+  just deleting the <name> line below for one or the other should fix it.-->
+	<name>vJoy Device</name>
+  <name>EDTracker Pro</name>
+  
+ 	<axis n="0">
+		<desc>Heading</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/h</property>
+			<factor type="double">-1600.0</factor>
+		</binding>
+	</axis>
+
+	<axis n="1">
+		<desc>Pitch</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/p</property>
+			<factor type="double">1600.0</factor>
+		</binding>
+	</axis>
+
+	<axis n="2">
+		<desc>Roll</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/r</property>
+			<factor type="double">-200.0</factor>
+		</binding>
+	</axis>
+ 
+	<axis n="3">
+		<desc>Z</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/z</property>
+			<factor type="double">3</factor>
+		</binding>
+	</axis> 
+	<axis n="4">
+		<desc>Y</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/y</property>
+			<factor type="double">2</factor>
+		</binding>
+	</axis> 
+	<axis n="5">
+		<desc>X</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/x</property>
+			<factor type="double">-2</factor>
+		</binding>
+	</axis>  
+<axis n="6">
+		<desc>Slider</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/slider</property>
+			<factor type="double">2</factor>
+		</binding>
+	</axis>
+<axis n="7">
+		<desc>Dial</desc>
+		<binding>
+			<command>property-scale</command>
+			<property>/sim/linuxtrack/data/dial</property>
+			<factor type="double">2</factor>
+		</binding>
+	</axis>   
+</PropertyList>
